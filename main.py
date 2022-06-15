@@ -325,7 +325,7 @@ engine_type_list = ['Diesel', 'Gas', 'Other', 'Petrol']
 registration_list = ['no', 'yes']
 
 # setting custome tab
-st.set_page_config(page_title='Used Car price Prediction by Subha', page_icon='🚗')
+st.set_page_config(page_title='Used Car price Prediction by Aniket', page_icon='🚗')
 
 
 # ceating car model brand list.
