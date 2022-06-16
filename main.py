@@ -357,11 +357,11 @@ with st.spinner('🚕🛺🚙🚜🚚🚓🚗🚕 Hold on, the app is loading !!
 st.markdown("<h2 style='text-align: center;'>🚗  Used Car Price Prediction™  🚗</h2>", unsafe_allow_html=True)
 
 
-col1, col2 = st.beta_columns(2)
+col1, col2 = st.columns(2)
 
 # start taking inpouts
 # 1. taking milage info integer
-mileage = col1.number_input(label='Enter the how the car has driven, e.g: 200 mile (enter number only)', help='how much the cas driven?')
+mileage = col1.number_input(label='Enter the how the car has driven, e.g: 200 mile (enter number only)', help='how much the cas driven?', step = 1,min_value=0)
 
 # 3. year integer
 year =  col1.slider('Enter the year when the car was manufactured, e.g: 2005', 1980,2020,2005,help='The year when the car is manufactured.')
@@ -380,7 +380,7 @@ engine_type = engine_type_dic[engine_type]
 
 
 # 2. Engine volume integer
-engineV = col2.number_input(label='Enter the volume of the car engine. [e.g: 2.3]', max_value=6.4, help='Enter the volume of the engine.')
+engineV = col2.number_input(label='Enter the volume of the car engine. [e.g: 2.3]', max_value=6.4, help='Enter the volume of the engine.',step = 0.1,min_value=0.1)
 engineV = float(engineV)
 
 # 5. body type integer
@@ -443,5 +443,5 @@ if predict:
 
 # writing some information about the projects.
 
-st.header('🧭 By- Aniket Pandey')
+st.header('🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀')
 
