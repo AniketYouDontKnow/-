@@ -354,7 +354,7 @@ with st.spinner('🚕🛺🚙🚜🚚🚓🚗🚕 Hold on, the app is loading !!
 
 # # writing header
 # st.title('# Used Car Price Predition™  🚗')
-st.markdown("<h2 style='text-align: center;'>🚗  Used Car Price Prediction™  🚗</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center;'>🚗  Used Car Price Prediction Using Random Forest Model 🚗</h2>", unsafe_allow_html=True)
 
 
 col1, col2 = st.columns(2)
